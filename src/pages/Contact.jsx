@@ -12,7 +12,7 @@ export default function Contact() {
             socialItems={socialItems}
             displaySocials={true}
             displayItemNumbering={true}
-            menuButtonColor="#000"
+            menuButtonColor="#232323"
             openMenuButtonColor="#62929E"
             changeMenuColorOnOpen={true}
             colors={['#C8C8C8', '#94ACAC']}
@@ -21,11 +21,12 @@ export default function Contact() {
             onMenuClose={() => console.log('Menu closed')}
             isFixed={true}
             panelBackground="#C6C5B9"
+            textColor="#232323"
           />
         </div>
         <div className="bg-[#C6C5B9] min-h-screen overflow-hidden">
-          <h1 className="p-10 pt-10 text-9xl font-bold text-black ">Contact</h1>
-          <Footer bg="bg-[#C6C5B9]"  text="text-black" border="black"/>
+          <h1 className="p-10 pt-10 text-9xl font-bold text-[#232323] ">Contact</h1>
+          <Footer bg="bg-[#C6C5B9]"  text="text-[#232323]" border="[#232323]"/>
         </div>
 
       </>

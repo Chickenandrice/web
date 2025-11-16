@@ -12,7 +12,7 @@ export default function Home() {
             socialItems={socialItems}
             displaySocials={true}
             displayItemNumbering={true}
-            menuButtonColor="#000"
+            menuButtonColor="#232323"
             openMenuButtonColor="#62929E"
             changeMenuColorOnOpen={true}
             colors={['#C6C5B9', '#94ACAC']}
@@ -21,11 +21,12 @@ export default function Home() {
             onMenuClose={() => console.log('Menu closed')}
             isFixed={true}
             panelBackground="#C8C8C8"
+            textColor="#232323"
           />
         </div>
         <div className="bg-[#C8C8C8] min-h-screen overflow-hidden">
-          <h1 className="p-10 pt-10 text-9xl font-bold text-black ">Joey Chen</h1>
-          <Footer bg="bg-[#C8C8C8]"  text="text-black" border="black"/>
+          <h1 className="p-10 pt-10 text-9xl font-bold text-[#232323] ">Joey Chen</h1>
+          <Footer bg="bg-[#C8C8C8]"  text="text-[#232323]" border="[#232323]"/>
         </div>
       </>
     );

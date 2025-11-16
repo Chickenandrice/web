@@ -20,7 +20,7 @@ export default function AppRoutes() {
     return <PageTransition2 key={pathname} />;
     
   }
-
+  
   return (
     <>
       {/* Sliding white + green overlay on every route change */}

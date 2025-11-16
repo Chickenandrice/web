@@ -12,7 +12,7 @@ export default function About() {
             socialItems={socialItems}
             displaySocials={true}
             displayItemNumbering={true}
-            menuButtonColor="#000"
+            menuButtonColor="#232323"
             openMenuButtonColor="#62929E"
             changeMenuColorOnOpen={true}
             colors={['#C8C8C8', '#94ACAC']}
@@ -20,12 +20,13 @@ export default function About() {
             onMenuOpen={() => console.log('Menu opened')}
             onMenuClose={() => console.log('Menu closed')}
             isFixed={true}
-            panelBackground="#C6C5B9"
+            panelBackground="#C6C5B9" 
+            textColor="#232323" 
           />
         </div> 
         <div className="bg-[#C6C5B9] min-h-screen overflow-hidden">
-          <h1 className=" pt-10 text-9xl px-10 font-bold text-black ">About</h1>
-          <Footer bg="bg-[#C6C5B9]" text="text-black" border="black"/>
+          <h1 className=" pt-10 text-9xl px-10 font-bold text-[#232323] ">About</h1>
+          <Footer bg="bg-[#C6C5B9]" text="text-[#232323]" border="[#232323]"/>
         </div>
       </>
     );
