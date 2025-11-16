@@ -30,7 +30,6 @@ export function useFollowPointer(ref) {
   const x = useSpring(0, spring);
   const y = useSpring(0, spring);
 
-  // ⭐ spring for size
   const scale = useSpring(1, { damping: 20, stiffness: 200 });
 
   const lastPos = useRef({ x: 0, y: 0 });
@@ -73,7 +72,6 @@ export function useFollowPointer(ref) {
     return () => window.removeEventListener("pointermove", handlePointerMove);
   }, []);
 
-  // ⭐ NEW: when no movement for a bit, reset scale back to 1
   useEffect(() => {
     const interval = setInterval(() => {
       const now = Date.now();
@@ -97,6 +95,8 @@ export function useFollowPointer(ref) {
 const ball = {
   width: 50,
   height: 50,
-  backgroundColor: "#8BAE66",
+  backgroundColor: "#62929E",
   borderRadius: "50%",
+  zIndex: 999999, 
+  opacity: 0.6
 };

@@ -10,27 +10,28 @@ export default function PageTransition() {
     <>
       {/* tan */}
       <motion.div
-        className="fixed inset-0 z-[9999] bg-[#EBD5AB]"
+        className="fixed inset-0 z-[9998] bg-[#C6C5B9]"
         initial={{ x: "-0%" }}
         animate={{ x: "100%" }}
         exit={{ x: "-200%" }}
         transition={{
             ...baseTransition,
-            delay: 0.1, // slight offset for layered effect
+            delay: 0.2, 
           }}
       />
 
-       {/* green */}
+       {/* light blue */}
       <motion.div
-        className="fixed inset-0 z-[9998] bg-[#8BAE66]"
+        className="fixed inset-0 z-[9999] bg-[#94ACAC]"
         initial={{ x: "-0%" }}
         animate={{ x: "100%" }}
         exit={{ x: "-200%" }}
         transition={{
           ...baseTransition,
-          delay: 0.2, // slight offset for layered effect
+          delay: 0.1,
         }}
       />
     </>
   );
 }
+
