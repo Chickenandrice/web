@@ -21,7 +21,7 @@ export default function Home() {
             onMenuClose={() => console.log('Menu closed')}
             isFixed={true}
             panelBackground="#C8C8C8"
-            textColor="#232323"
+            textColor="#232323" 
           />
         </div>
         <div className="bg-[#C8C8C8] min-h-screen overflow-hidden">
