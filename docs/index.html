@@ -2,6 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      (function () {
+        const params = new URLSearchParams(window.location.search);
+        const redirect = params.get("redirect");
+        if (redirect) {
+          history.replaceState(null, "", redirect);
+        }
+      })();
+    </script>
     <link rel="icon" type="image/svg+xml" href="/JC_Copperplate_ExtraLarge.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>joeychen.dev</title>
